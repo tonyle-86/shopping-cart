@@ -24,6 +24,7 @@ function App() {
   useEffect(() => {
     // CALCULATE THE PRICE WHENEVER ITEM IS ADDED OR REMOVED FROM BASKET
     onCalculate();
+    // eslint-disable-next-line
   }, [basketList]);
 
   // ADD ITEM TO BASKET
