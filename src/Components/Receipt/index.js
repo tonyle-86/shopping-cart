@@ -25,7 +25,7 @@ const Receipt = ({ items, discountList, subTotal, totalSaving, totalPay }) => {
       {discountList.map((o, i) => (
         <div key={i} className="row-space-b">
           <span>{`${o?.title}`}</span>
-          <span>-£{`${o?.amount}`}</span>
+          <span>-£{`${o?.amount.toFixed(2)}`}</span>
         </div>
       ))}
 

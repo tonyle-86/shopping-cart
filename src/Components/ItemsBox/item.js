@@ -6,7 +6,7 @@ const Item = ({ name, itemId, price, type, unit = "", onAddItem }) => {
   return (
     <div className="item">
       <h5>{name}</h5>
-      <p>{`Price ${type === "UNIT" ? "by 1 " + unit : ""}: ${price}`}</p>
+      <p>{`Price ${type === "UNIT" ? "by 1 " + unit : ""}: £${price}`}</p>
       {type === "UNIT" && (
         <input
           data-testid={`${itemId}-input`}

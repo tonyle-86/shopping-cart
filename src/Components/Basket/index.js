@@ -19,7 +19,7 @@ const BasketList = ({ basketItems, onRemoveItem }) => {
               {obj.qtyUnit} {obj.unit}
             </p>
           )}
-          <p>Price: {price(obj)}</p>
+          <p>Price: £{price(obj)}</p>
           <button
             className="d-btn"
             onClick={() => onRemoveItem && onRemoveItem(obj.id)}

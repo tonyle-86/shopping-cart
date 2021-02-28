@@ -54,6 +54,7 @@ button {
 .basket-list {
   border: 1px solid;
   padding: 1rem 4px;
+  height: 320px;
   overflow-y: scroll;
 }
 
